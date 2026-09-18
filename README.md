@@ -41,20 +41,6 @@ gh skill update --all
 5. Validate before publishing.
 6. Commit and push your changes.
 
-## Publish
+## Optional publishing
 
-Validate the repository without publishing:
-
-```bash
-gh skill publish --dry-run
-```
-
-Publish the skills after pushing your changes:
-
-```bash
-gh skill publish
-```
-
-Run it from this repository after committing and pushing. It validates the skills and guides you through publishing them.
-
-`gh skill` is a GitHub CLI preview feature, so its interface may change.
+This repository is usable directly from GitHub. If you later want tagged releases or broader discovery, see [GitHub's `gh skill publish` documentation](https://cli.github.com/manual/gh_skill_publish).
