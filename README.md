@@ -10,7 +10,13 @@ This repository follows the [Agent Skills specification](https://agentskills.io/
 skills/<skill-name>/SKILL.md
 ```
 
-A skill may keep `scripts/`, `references/`, or `assets/` alongside `SKILL.md` when they are genuinely useful. The `skills/` directory is intentionally empty until there is a real skill to add.
+A skill may keep `scripts/`, `references/`, or `assets/` alongside `SKILL.md` when they are genuinely useful.
+
+## Skills
+
+| Skill | Invoke | What it does |
+| --- | --- | --- |
+| [`design`](skills/design/SKILL.md) | `/design` → **Design** in the Codex app, or `$design` in Codex CLI/IDE | Guides intentional, production-ready UI design: explore directions, implement, inspect the rendered result, refine, and simplify. |
 
 ## Install a skill
 
