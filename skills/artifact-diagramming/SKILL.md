@@ -1,6 +1,6 @@
 ---
 name: artifact-diagramming
-description: Create concise, accessible technical diagrams that explain real system mechanisms. Use for architecture, data or request flows, state transitions, infrastructure, lifecycle, and before/after comparisons when a visual is clearer than prose.
+description: Focused, accessible SVG diagrams for real technical mechanisms and decisions.
 license: MIT
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: design
-description: Design and implement distinctive, production-ready user interfaces. Use for new screens, flows, or material UI redesigns; not for narrow mechanical UI fixes with no visual-direction work.
+description: "Intentional, production-ready UI design: explore, implement, inspect, refine, and simplify."
 license: MIT
 ---
 
