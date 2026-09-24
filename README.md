@@ -39,6 +39,12 @@ Install every skill in this repository for Codex:
 gh skill install Twinbird24/skills --all --agent codex --scope user
 ```
 
+Install every skill in this repository for Claude Code:
+
+```bash
+gh skill install Twinbird24/skills --all --agent claude-code --scope user
+```
+
 When skills installed from GitHub change, check for updates and then install them—there is no need to re-add the skills:
 
 ```bash
