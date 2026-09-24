@@ -33,11 +33,20 @@ Install it globally for Codex:
 gh skill install Twinbird24/skills <skill-name> --agent codex --scope user
 ```
 
-Update installed skills when you want the latest version:
+Install every skill in this repository for Codex:
 
 ```bash
+gh skill install Twinbird24/skills --all --agent codex --scope user
+```
+
+When skills installed from GitHub change, check for updates and then install them—there is no need to re-add the skills:
+
+```bash
+gh skill update --dry-run
 gh skill update --all
 ```
+
+For skills installed with `--from-local`, rerun that local install command with `--force` after changing the source.
 
 ## Create a skill
 
