@@ -16,7 +16,7 @@ A skill may keep `scripts/`, `references/`, or `assets/` alongside `SKILL.md` wh
 
 | Skill | Invoke | What it does |
 | --- | --- | --- |
-| [`design`](skills/design/SKILL.md) | `/design` → **Design** in the Codex app, or `$design` in Codex CLI/IDE | Intentional, production-ready UI design: explore, implement, inspect, refine, and simplify. |
+| [`design`](skills/design/SKILL.md) | `/design` → **Design** in the Codex app, or `$design` in Codex CLI/IDE | Intentional, production-ready UI design: explore distinct directions, then implement, inspect, refine, and simplify. |
 | [`artifact-diagramming`](skills/artifact-diagramming/SKILL.md) | `/artifact-diagramming` in Claude Code or the Codex app, or `$artifact-diagramming` in Codex CLI/IDE | Focused, accessible SVG diagrams for real technical mechanisms and decisions. |
 
 ## Install a skill
