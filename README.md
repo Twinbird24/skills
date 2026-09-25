@@ -45,14 +45,21 @@ Install every skill in this repository for Claude Code:
 gh skill install Twinbird24/skills --all --agent claude-code --scope user
 ```
 
-When skills installed from GitHub change, check for updates and then install them—there is no need to re-add the skills:
+## Refresh installed skills
+
+When this repository changes, run this to download the latest versions from GitHub and replace your installed copies. It keeps the same skills installed; it simply refreshes their files.
+
+For Codex:
 
 ```bash
-gh skill update --dry-run
-gh skill update --all
+gh skill install Twinbird24/skills --all --agent codex --scope user --force
 ```
 
-For skills installed with `--from-local`, rerun that local install command with `--force` after changing the source.
+For Claude Code:
+
+```bash
+gh skill install Twinbird24/skills --all --agent claude-code --scope user --force
+```
 
 ## Create a skill
 
