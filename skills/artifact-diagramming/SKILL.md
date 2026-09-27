@@ -1,6 +1,6 @@
 ---
 name: artifact-diagramming
-description: Clear, editable technical diagrams for real mechanisms and decisions.
+description: Focused, accessible SVG diagrams for real technical mechanisms and decisions.
 license: MIT
 ---
 
@@ -18,14 +18,16 @@ Match scope to the decision. Prefer one figure with one claim; split an overview
 
 ## Build the diagram
 
-Use Mermaid by default for flowcharts, architecture and infrastructure diagrams, request lifecycles, sequence diagrams, state diagrams, ER diagrams, and similar technical visuals. Use another tool only when it clearly communicates the particular idea better.
+Prefer a clean, hand-authored inline SVG when the destination supports it. Use native SVG shapes, text, paths, and markers—never Mermaid, external images, JavaScript, runtime libraries, or decorative complexity.
 
-- Write clean Mermaid source with short labels, explicit arrow actions, and a simple hierarchy. Prefer clear structure over encoding every detail; split a complex system into multiple focused diagrams when it improves comprehension.
-- Render the Mermaid with available tooling, preferably to SVG (or PNG when appropriate), and keep the `.mmd` source beside the rendered file so it remains editable. Use responsive output and make the essential meaning available in nearby prose or a caption.
-- Visually inspect the rendered diagram. Revise its layout, direction, grouping, labels, or scope if it is cluttered, ambiguous, or poorly arranged.
+- Set a content-sized `viewBox` and let the SVG scale responsively (for example, `max-width: 100%; height: auto`). Use left-to-right layouts for flows and top-to-bottom layouts for layers or branching.
+- Use `currentColor` for strokes, text, and arrowheads so the diagram works in light and dark themes. Reserve accent color for a meaningful distinction, and never make color the only carrier of meaning.
+- Use `defs` and a diagram-specific marker id for arrowheads. Keep all references within the SVG fragment.
+- Align nodes to a simple grid with even gaps and shared baselines. Use clear hierarchy, not ornament, to emphasize the path or difference that matters.
+- Keep text legible at the rendered size and labels to a few words. Avoid `foreignObject`, embedded styles or scripts, and long decorative path data.
 
-When the host supports it, provide a meaningful accessible label and caption. Ensure the surrounding text still communicates the essential conclusion.
+Wrap standalone SVGs in a `figure` when the host permits it. Give the SVG `role="img"` and a meaningful `aria-label`; add a `figcaption` when it helps state the diagram's claim. Ensure the surrounding text still communicates the essential conclusion.
 
 ## Check before delivery
 
-Confirm that the diagram has one main idea, every arrow describes a real operation, all relevant success/failure or state paths are visible, and no box, label, boundary, or accent exists merely as decoration. Simplify until the mechanism reads at a glance.
+Confirm that the diagram has one main idea, every arrow describes a real operation, all relevant success/failure or state paths are visible, and no box, label, boundary, or accent exists merely as decoration. Render or preview it when possible; simplify until the mechanism reads at a glance.
